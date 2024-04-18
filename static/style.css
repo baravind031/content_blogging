@@ -1,0 +1,156 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    margin-right: 10px;
+}
+
+/* Center align the icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for each icon */
+.icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the icon itself */
+.icon i {
+    margin-right: 5px;
+}
+
+.menu-bar {
+    list-style-type: none;
+    text-align: right;
+}
+
+.menu-bar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-bar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 3px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-bar li a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4a8eab;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.post h2 {
+    color: #333;
+    text-align: left;
+}
+
+.post p {
+    color: #555;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.post a{
+    text-decoration: none;
+    color: black;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.comment-icon,
+.like-icon,
+.share-icon {
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.content-link{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.comment-icon::before,
+.like-icon::before,
+.share-icon::before {
+    font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome font family */
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+@media screen(max-width: 768px) {
+    .home{
+        max-width: 768px
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav ul.menu-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul.menu-bar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul.menu-bar li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .content-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .content-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-bar">
+                <li><a href="{{ url_for('admin') }}">Home</a></li>
+                <li><a href="{{ url_for('all_posts') }}">View All Post</a></li>
+                <li><a href="{{ url_for('add_post') }}">Add New Post</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+
+        <h1>Welcome to Your Blog</h1>
+        <a href="{{ url_for('add_post') }}" class="content-link">Start writing amazing content! <i class="fas fa-pencil-alt"></i></a>
+    </header>
+
+    <!-- Content of the page goes here -->
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
